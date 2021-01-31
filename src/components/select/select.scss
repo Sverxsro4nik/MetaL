@@ -1,0 +1,47 @@
+
+
+.select{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    width: 320px;
+    border: 1px solid $dark-shade_25;
+    border-radius: 4px;
+    display: inline-block;
+    appearance: none;
+    background: url(images/expand_more.png) no-repeat right center;
+    background-position-x: 280px;
+    color: $dark-shade_75;
+
+    &:focus-visible{
+        outline: none;
+    }
+    &::placeholder{
+        color: $dark-shade_75;
+    }
+
+    
+}
+
+.select__date{
+    width: 150px;
+    padding-top: 11.5px;
+    padding-bottom: 8.5px;
+    padding-left: 15px;
+    border: 1px solid $dark-shade_25;
+    line-height: 18px;
+    border-radius: 4px;
+    color: $dark-shade_75;
+    background: url(images/expand_more.png) no-repeat right center;
+    background-position-x: 120px;
+    appearance: none;
+    &:focus-visible{
+        outline: none;
+    }
+}
+
+.filter__date{
+    width: 266px;
+    background: url(images/expand_more.png) no-repeat right center;
+    background-position-x: 234px;
+}

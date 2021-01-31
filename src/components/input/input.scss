@@ -1,0 +1,44 @@
+
+.input{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 14px;
+    letter-spacing: 0.5px;
+    width: 320px;
+    height: 44px;
+    border: 1px solid $dark-shade_25;
+    border-radius: 4px;
+
+    &::placeholder{
+        font-family: 'Montserrat';
+        line-height: 18px;
+        color: $dark-shade_25;
+    }
+
+    &:focus, &:hover{
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 15px;
+        border-color: $dark-shade_50;
+        font-family: 'Montserrat';
+        line-height: 1.5;   
+    }
+
+    &:focus::placeholder, &:hover::placeholder, &:active::placeholder{
+        color: $dark-shade_75;
+    }
+
+    &:focus-visible{
+        outline: none;
+    }
+}
+
+.subscribe{
+    width: 267px;
+    background: url(images/arrow_forward.png) no-repeat right center;
+    background-position-x: 237px;
+}
+
+.checkbox{
+    display: none;
+}
