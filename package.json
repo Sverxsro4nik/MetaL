@@ -1,5 +1,5 @@
 {
-  "name": "webpack-demo",
+  "name": "MetaLamp Works",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -10,7 +10,7 @@
     "dev": "webpack serve --open"
   },
   "keywords": [],
-  "author": "",
+  "author": "sverxsro4nik@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
