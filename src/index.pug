@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Pug
-    body
-        h1 Pug loader
-        img(src="./computer.svg", alt="", srcset="")
+extends ./pug/layout/main.pug
+block content
+    include ./pug/pages/color__types.pug
