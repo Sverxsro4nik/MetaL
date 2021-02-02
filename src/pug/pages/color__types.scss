@@ -1,0 +1,102 @@
+@import '../components/logo/logo';
+
+.color__page {
+    padding: 30px;
+    width: 1440px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+}
+
+.flex__wrapper {
+    display: flex;
+    margin-top: 67px;
+    justify-content: space-between;
+    margin-left: 120px;
+    // gap: 415px;
+}
+
+.color__flex {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.item {
+    width: 70px;
+    height: 70px;
+    background-color: #1F2041;
+    border-radius: 6px;
+}
+
+.dark-shade_75 {
+    background-color: $dark-shade_75;
+}
+
+.dark-shade_50 {
+    background-color: $dark-shade_50;
+}
+
+.dark-shade_25 {
+    background-color: $dark-shade_25;
+}
+
+.dark-shade_5 {
+    background-color: $dark-shade_5;
+}
+
+.purple {
+    background-color: $purple;
+}
+
+.green {
+    background-color: $green;
+}
+
+.text__item {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+
+        gap: 30px;
+        margin-bottom: 51px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__title {
+            width: 37px;
+            color: $dark-shade_25;
+            text-align: center;
+        }
+
+        &__description {
+            width: 369px;
+        }
+    }
+}
+
+.extra-large {
+    font-size: 24px;
+}
+
+.large {
+    font-size: 19px;
+}
+
+.normal {
+    font-size: 14px;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.bold {
+    font-weight: 700;
+}
