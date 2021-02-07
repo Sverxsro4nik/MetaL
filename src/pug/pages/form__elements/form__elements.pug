@@ -30,19 +30,55 @@ block content
                     +about('subscribe text field')
                     include ../../components/subscribe/subscribe
             .center__part
-                .checkbox__part
-                    h3 checkbox buttons
-                    include ../../components/checkbox/checkbox.pug
-                    include ../../components/checkbox/checkbox.pug
-                    include ../../components/checkbox/checkbox.pug
-                .radio__part
-                    h3 radio buttons
-                    include ../../components/radio/radio.pug
-                    include ../../components/radio/radio.pug
-                .toggle__part
-                    h3 toggle
-                    include ../../components/toggle/toggle.pug
-                    include ../../components/toggle/toggle.pug
+                .component__wrapper
+                    +about('checkbox buttons')
+                    include ../../components/checkbox/checkbox
+                    include ../../components/checkbox/checkbox
+                    include ../../components/checkbox/checkbox
+                .component__wrapper
+                    +about('radio buttons')
+                    include ../../components/radio/radio
+                    include ../../components/radio/radio
+                .component__wrapper
+                    +about('toggle')
+                    include ../../components/toggle/toggle
+                    include ../../components/toggle/toggle
+                .component__wrapper
+                    +about('like button')
+                    include ../../components/like/like
+                    include ../../components/like/like
+                .component__wrapper
+                    +about('rate button')
+                    include ../../components/rate/rate
+                    include ../../components/rate/rate
+            .right__part
+                .component__wrapper
+                    +about('range slider', '5000Р-10000Р')
+                    include ../../components/range/range
+                .component__wrapper
+                    +about('buttons')
+                    include ../../components/button/button
+                    include ../../components/button/button
+                    include ../../components/button/button
+                    include ../../components/button/button
+                    include ../../components/button/button
+                    include ../../components/button/button
+                    include ../../components/button/button
+                .component__wrapper
+                    +about('pagination', '1 – 12 из 100+ вариантов аренды')
+                    include ../../components/pagination/pagination
         .dropdown__part
+            .component__wrapper
+                    +about('dropdown', 'default')
+                    include ../../components/room__drop/room__drop
+            .component__wrapper
+                    +about('dropdown', 'expanded')
+                    include ../../components/room__drop/room__drop
+            .component__wrapper
+                    +about('dropdown')
+                    include ../../components/guests__drop/guest__drop
+            .component__wrapper
+                    +about('dropdown')
+                    include ../../components/guests__drop/guest__drop
         .checkbox__part
         .comments__part
