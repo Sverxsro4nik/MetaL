@@ -1,6 +1,4 @@
-
-
-.select{
+.select {
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 15px;
@@ -9,21 +7,24 @@
     border-radius: 4px;
     display: inline-block;
     appearance: none;
-    background: url(images/expand_more.png) no-repeat right center;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.3301 0.578125L12.7363 1.98438L6.73633 7.98438L0.736328 1.98438L2.14258 0.578125L6.73633 5.17188L11.3301 0.578125Z' fill='%231F2041' fill-opacity='0.5'/%3E%3C/svg%3E");
     background-position-x: 280px;
+    background-repeat: no-repeat;
+    background-position-y: center;
     color: $dark-shade_75;
 
-    &:focus-visible{
+    &:focus-visible {
         outline: none;
     }
-    &::placeholder{
+
+    &::placeholder {
         color: $dark-shade_75;
     }
 
-    
+
 }
 
-.select__date{
+.select__date {
     width: 150px;
     padding-top: 11.5px;
     padding-bottom: 8.5px;
@@ -32,16 +33,21 @@
     line-height: 18px;
     border-radius: 4px;
     color: $dark-shade_75;
-    background: url(images/expand_more.png) no-repeat right center;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.3301 0.578125L12.7363 1.98438L6.73633 7.98438L0.736328 1.98438L2.14258 0.578125L6.73633 5.17188L11.3301 0.578125Z' fill='%231F2041' fill-opacity='0.5'/%3E%3C/svg%3E");
     background-position-x: 120px;
+    background-repeat: no-repeat;
+    background-position-y: center;
     appearance: none;
-    &:focus-visible{
+
+    &:focus-visible {
         outline: none;
     }
 }
 
-.filter__date{
+.filter__date {
     width: 266px;
-    background: url(images/expand_more.png) no-repeat right center;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.3301 0.578125L12.7363 1.98438L6.73633 7.98438L0.736328 1.98438L2.14258 0.578125L6.73633 5.17188L11.3301 0.578125Z' fill='%231F2041' fill-opacity='0.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
     background-position-x: 234px;
+    background-position-y: center;
 }

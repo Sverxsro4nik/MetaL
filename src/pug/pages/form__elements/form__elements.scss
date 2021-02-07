@@ -1,0 +1,25 @@
+@import '../../components/logo/logo';
+@import '../../components/input/input';
+@import '../../components/radio/radio';
+@import '../../components/checkbox/checkbox';
+@import '../../components/like/like';
+@import '../../components/range/range';
+@import '../../components/rate/rate';
+@import '../../components/select/select';
+@import '../../components/toggle/toggle';
+
+.grid__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto-fit);
+}
+
+.input__part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left__part {
+    display: flex;
+    flex-direction: column;
+}
