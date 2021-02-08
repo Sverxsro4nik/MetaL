@@ -1,1 +1,10 @@
-input(type="text" placeholder="Email").input
+//- input(type="text" placeholder="Email").input
+mixin input(options)
+    if !options
+        options = {}
+    input(
+        class = options.class
+        type = options.type,
+        placeholder = options.placeholder
+        required = options.required
+    )

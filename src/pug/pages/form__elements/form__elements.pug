@@ -1,3 +1,4 @@
+include ../../components/input/input
 block content
     mixin about(title, text='')
             .text__part
@@ -10,16 +11,16 @@ block content
             .left__part
                 .component__wrapper
                     +about('text field', 'default')
-                    include ../../components/input/input.pug
+                    +input({class: 'input', type: 'text', placeholder: 'Ваш email', required: required})
                 .component__wrapper
                     +about('text field', 'hover/focus')
-                    include ../../components/input/input.pug
+                    +input({class: 'input', type: 'text', placeholder: 'Ваш email', required: required})
                 .component__wrapper
                     +about('dropdown')
                     include ../../components/select/select.pug
                 .component__wrapper
                     +about('masked text field')
-                    include ../../components/input/input.pug
+                    +input({class: 'input', type: 'text', placeholder: 'Ваш email', required: required})
                 .component__wrapper
                     +about('date dropdown')
                     include ../../components/date__dropdown/date__drop
