@@ -1,4 +1,6 @@
 include ../../components/input/input
+include ../../components/select/select
+include ../../components/option/option
 block content
     mixin about(title, text='')
             .text__part
@@ -17,7 +19,7 @@ block content
                     +input({class: 'input', type: 'text', placeholder: 'Ваш email', required: required})
                 .component__wrapper
                     +about('dropdown')
-                    include ../../components/select/select.pug
+                    +select({class: 'select', name: 'person', count: 2})
                 .component__wrapper
                     +about('masked text field')
                     +input({class: 'input', type: 'text', placeholder: 'Ваш email', required: required})

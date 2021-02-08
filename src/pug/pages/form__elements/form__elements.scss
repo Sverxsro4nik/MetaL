@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto-fit);
+    width: 1440px;
 }
 
 .input__part {
@@ -20,4 +21,16 @@
 .left__part {
     display: flex;
     flex-direction: column;
+    margin-left: 140px;
+}
+
+.component__wrapper {
+    width: 320px;
+    height: 67px;
+
+    .text__part {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
 }

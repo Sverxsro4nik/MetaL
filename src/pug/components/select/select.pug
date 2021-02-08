@@ -1,3 +1,9 @@
-select.select(name="person")
-    option.select__item-first(value="Сколько гостей?") Сколько гостей?
+
+mixin select(options)
+    if !options
+        options = {}
+    select(
+        name = options.name
+        class = options.class
+    )
 
