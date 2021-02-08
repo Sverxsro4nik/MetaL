@@ -1,10 +1,35 @@
-//- input(type="text" placeholder="Email").input
+//- object options
+//- type
+//- class
+//- placeholder
+//- required
+//- name
+//- id
+//- checked
+
 mixin input(options)
     if !options
         options = {}
-    input(
-        class = options.class
-        type = options.type,
-        placeholder = options.placeholder
-        required = options.required
-    )
+    if options.type === 'text' || options.type === 'email' || options.type === 'password'
+        input(
+            class = options.class,
+            type = options.type,
+            placeholder = options.placeholder
+            required = options.required
+        )
+    if options.type === 'checkbox'
+        label.check
+            input(
+                class = options.class,
+                type = options.type,
+            )
+            span.check__box
+            | #{options.text}
+    if options.type === 'radio'
+        label.radio
+            input(
+                class = options.class,
+                type = options.type,
+                name= options.name)
+            span.radio__box
+            | #{options.text}

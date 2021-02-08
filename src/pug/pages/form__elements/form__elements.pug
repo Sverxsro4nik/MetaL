@@ -33,13 +33,13 @@ block content
             .center__part
                 .component__wrapper
                     +about('checkbox buttons')
-                    include ../../components/checkbox/checkbox
-                    include ../../components/checkbox/checkbox
-                    include ../../components/checkbox/checkbox
+                    +input({class: 'check__input', type: 'checkbox', text: 'Text'})
+                    +input({class: 'check__input', type: 'checkbox', text: 'Text'})
+                    +input({class: 'check__input', type: 'checkbox', text: 'Text'})
                 .component__wrapper
                     +about('radio buttons')
-                    include ../../components/radio/radio
-                    include ../../components/radio/radio
+                    +input({class: 'radio__input', type: 'radio', text: 'Text'})
+                    +input({class: 'radio__input', type: 'radio', text: 'Text'})
                 .component__wrapper
                     +about('toggle')
                     include ../../components/toggle/toggle
